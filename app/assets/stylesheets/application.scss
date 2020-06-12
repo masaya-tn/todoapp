@@ -15,9 +15,26 @@
  */
 
  @import 'header';
+ @import 'card';
 
  body {
      background-color: #F2F2F2;
  }
 
- 
+ .all_boards {
+    position: absolute;
+    height: 30px;
+    left: 0%;
+    right: 0%;
+    top: calc(15% - 36px/2);
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+ }
