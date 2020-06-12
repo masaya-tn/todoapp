@@ -7,13 +7,17 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
   %body
     %header.header
       .header_logos
-        %p.header_pageTitle
+        %p.header_title
           = 'Boards'
-    
-          = image_tag 'default-avatar.png'
+        %p.header_image
+          = image_tag 'Image.png', class: 'header_avatar'
+        %p.header_border
+
     = yield
       
         
