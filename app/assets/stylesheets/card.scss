@@ -7,6 +7,43 @@
 
     background: rgb(216, 215, 215);
     border-radius: 10px;
+
+    &_title {
+        position: absolute;
+        height: 25px;
+        left: 0%;
+        right: 76.79%;
+        top: calc(50% - 25px/2 - 12.5px);
+        
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+        
+        
+        color: #000000;
+    }
+
+    &_content {
+        position: absolute;
+        height: 19px;
+        left: 0%;
+        right: 0%;
+        top: calc(50% - 19px/2 + 15.5px);
+        
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        
+        color: #000000;
+        
+        mix-blend-mode: normal;
+        opacity: 0.4;
+    }
 }
 
 .add_new_card {
