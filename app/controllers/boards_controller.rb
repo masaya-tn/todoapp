@@ -1,7 +1,9 @@
 class BoardsController < ApplicationController
     
     def index
+      
       @boards = Board.all
+      
     end
 
     def show
@@ -10,6 +12,7 @@ class BoardsController < ApplicationController
 
     def new
       @board = current_user.boards.build
+
     end
 
     
