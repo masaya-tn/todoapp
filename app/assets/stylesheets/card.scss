@@ -1,19 +1,22 @@
 .card {
-    position: absolute;
-    width: 362px;
-    height: 161px;
-    left: 30px;
-    top: 161px;
+    // position: absolute;
+    // width: 362px;
+    // height: 161px;
+    // left: 30px;
+    // top: 161px;
 
     background: rgb(216, 215, 215);
     border-radius: 10px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 
     &_title {
-        position: absolute;
-        height: 25px;
-        left: 0%;
-        right: 76.79%;
-        top: calc(50% - 25px/2 - 12.5px);
+        // position: absolute;
+        // height: 25px;
+        // left: 0%;
+        // right: 76.79%;
+        // top: calc(50% - 25px/2 - 12.5px);
         
         font-family: Avenir;
         font-style: normal;
@@ -27,11 +30,11 @@
     }
 
     &_content {
-        position: absolute;
-        height: 19px;
-        left: 0%;
-        right: 0%;
-        top: calc(50% - 19px/2 + 15.5px);
+        // position: absolute;
+        // height: 19px;
+        // left: 0%;
+        // right: 0%;
+        // top: calc(50% - 19px/2 + 15.5px);
         
         font-family: Avenir;
         font-style: normal;
@@ -42,16 +45,16 @@
         color: #000000;
         
         mix-blend-mode: normal;
-        opacity: 0.4;
+        // opacity: 0.4;
     }
 }
 
 .add_new_card {
-    position: absolute;
+    position: relative;
     width: 362px;
     height: 160px;
     left: 30px;
-    top: 348px;
+    top: 100px;
 
     background: #FFFFFF;
     border: 1px dashed rgba(0, 0, 0, 0.2);
@@ -76,4 +79,8 @@
         color: #000000;
 
     }
+}
+
+.container {
+    margin-top: 150px;
 }
