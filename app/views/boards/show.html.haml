@@ -1,0 +1,10 @@
+.board
+  %h1.board_title= @board.title
+  - @tasks.each do |task|
+    =task.title
+
+.add_new_card
+  =link_to new_task_path do
+    .add_new_card_text
+      +Add new task
+    
