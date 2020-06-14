@@ -15,5 +15,5 @@
 #  index_tasks_on_user_id  (user_id)
 #
 class Task < ApplicationRecord
-  bolongs_to :user
+  belongs_to :user
 end

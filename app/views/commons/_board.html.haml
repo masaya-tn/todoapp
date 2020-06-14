@@ -1,16 +1,17 @@
-.card
-  .card_content
-    .card_title
-      = board.title
+= link_to board_path(board) do
+  .card
     .card_content
-      = board.content
-    .card_name
-      
-    .dropdown
-      = image_tag 'actions.svg', class: 'dropbtn'
-      .dropdown-content.mini
-        = link_to '編集する',  edit_board_path(board)
-        = link_to '削除する',  board_path(board), data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
+      .card_title
+        = board.title
+      .card_content
+        = board.content
+      .card_name
+        
+      .dropdown
+        = image_tag 'actions.svg', class: 'dropbtn'
+        .dropdown-content.mini
+          = link_to '編集する',  edit_board_path(board)
+          = link_to '削除する',  board_path(board), data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
     
   
         
