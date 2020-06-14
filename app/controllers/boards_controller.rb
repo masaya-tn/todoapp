@@ -12,7 +12,9 @@ class BoardsController < ApplicationController
 
     end
 
-    
+    def show
+      
+    end
 
     def create
       @board = current_user.boards.build(board_params)
