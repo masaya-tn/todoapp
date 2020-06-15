@@ -13,7 +13,7 @@ class BoardsController < ApplicationController
     end
 
     def show
-      @tasks = Task.all
+      @tasks = @board.tasks
     end
 
     def create
