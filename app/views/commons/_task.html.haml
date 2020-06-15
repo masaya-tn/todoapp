@@ -1,12 +1,13 @@
 .card
-  .card_content
-    - if task.eyecatch.attached?
-      .card_image
-        = image_tag task.eyecatch
+  = link_to board_task_path(task) do
+    .card_content
+      - if task.eyecatch.attached?
+        .card_image
+          = image_tag task.eyecatch
     .card_title
       = task.title
     .card_content
       = task.content
-    .card_name
+        
         
       
