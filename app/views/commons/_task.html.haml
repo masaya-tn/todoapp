@@ -1,5 +1,8 @@
 .card
   .card_content
+    - if task.eyecatch.attached?
+      .card_image
+        = image_tag task.eyecatch
     .card_title
       = task.title
     .card_content
