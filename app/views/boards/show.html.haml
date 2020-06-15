@@ -1,7 +1,7 @@
 .board
   %h1.board_title= @board.title
   - @tasks.each do |task|
-    = render 'commons/task', task: task
+    = render 'commons/task', task: task , board: @board
 
 .add_new_card
   = link_to new_board_task_path(@board) do
