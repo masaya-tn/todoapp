@@ -1,18 +1,15 @@
 class TasksController < ApplicationController
-    
-
-    def index
-      
-    end
 
     def new
-      @task = current_user.tasks.build
+      board = Board.find(params[:board_id])
+      @task = board.tasks.build
     end
 
     def create
-      @task = current_user.tasks.build(task_params)
+      board = Board.find(params[:board_id])
+      @task = board.tasks.build(task_params)
       if @task.save
-        redirect_to task_path(@task)
+        redirect_to boards_path
       else
         render :new
       end
