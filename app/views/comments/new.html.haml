@@ -1,0 +1,9 @@
+.container
+  = form_with(model: @comment, url: task_comments_path(@task), local: true) do |f|
+    %div
+      = f.label :content
+    %div
+      = f.text_area :content
+    %div
+      = f.hidden_field :user_id, :value => @user_id
+    = f.submit 'submit', class: 'btn-primary'

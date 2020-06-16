@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   root to: "boards#index"
 
   resources :boards do
-    resources :tasks do
-      resources :comments
-    end
+    resources :tasks 
+  end
+
+  resources :tasks do
+    resources :comments
   end
 end
