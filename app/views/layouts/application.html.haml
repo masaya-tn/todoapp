@@ -14,8 +14,13 @@
       .header_logos
         %p.header_title
           = 'Boards'
-        %p.header_image
-          = image_tag 'Image.png', class: 'header_avatar'
+        
+        .dropdown
+          .dropdown_img
+          = image_tag 'Image.png', class: 'dropbtn'
+          .dropdown-content.mini
+            = link_to 'ログアウト',  destroy_user_session_path, data: { method: 'delete' }
+
         %p.header_border
 
     = yield

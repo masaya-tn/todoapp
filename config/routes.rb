@@ -12,4 +12,13 @@ Rails.application.routes.draw do
   resources :tasks do
     resources :comments
   end
+
+  devise_scope :users do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
+
+  resources :users do
+    delete 'destroy', :on => :
+  end
+
 end
