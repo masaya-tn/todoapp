@@ -15,17 +15,19 @@
         %p.header_title
           = link_to root_path do
             = 'Boards'
+      .header_avatar
         - if user_signed_in?
           .dropdown
             .dropdown_img
-              = image_tag 'Image.png', class: 'dropbtn'
+              = image_tag 'Image.png', class: 'avatar'
             .dropdown-content.mini
+              = link_to 'プロフィール', profile_path
               = link_to 'ログアウト',  destroy_user_session_path, data: { method: 'delete' }
         - else
           = link_to 'ログイン', new_user_session_path
           
 
-        %p.header_border
+      %p.header_border
 
     = yield
       
