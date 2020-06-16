@@ -8,11 +8,13 @@
       = task.title
     .card_content
       = task.content
-    .dropdown
-      = image_tag 'actions.svg', class: 'dropbtn'
-      .dropdown-content.mini
-        = link_to '編集する',  edit_board_task_path(board_id: @board.id, id: task.id)
-        = link_to '削除する',  board_task_path(board_id: @board.id, id: task.id), data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
+    
+    - if user_signed_in? && current_user.tasks.exists?(id: task.id)
+      .dropdown
+        = image_tag 'actions.svg', class: 'dropbtn'
+        .dropdown-content.mini
+          = link_to '編集する',  edit_board_task_path(board_id: @board.id, id: task.id)
+          = link_to '削除する',  board_task_path(board_id: @board.id, id: task.id), data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
         
         
       
