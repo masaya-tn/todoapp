@@ -1,1 +1,6 @@
-@task.title
+= @task.title
+- if @task.eyecatch.attached?
+  .eyecatch
+    = image_tag @task.eyecatch
+= @task.content
+= @task.limit

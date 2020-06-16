@@ -3,7 +3,7 @@ class TasksController < ApplicationController
     def new
       board = Board.find(params[:board_id])
       @task = board.tasks.build
-      @board_user_id = current_user.id
+      @task_user_id = current_user.id
     end
 
     def create
@@ -22,14 +22,22 @@ class TasksController < ApplicationController
     end
 
     def edit
-      
+      @board = Board.find(params[:board_id])
+      @task = current_user.tasks.find(params[:id])
+      @task_user_id = current_user.id
     end
 
     def update
-
+      @task = current_user.tasks.find(params[:id])
+      if @task.update(task_params)
+        redirect_to board_path(params[:board_id])
+      end
     end
 
     def destroy
+      task = current_user.tasks.find(params[:id])
+      task.destroy!
+      redirect_to board_path(params[:board_id])
     end
 
     private
