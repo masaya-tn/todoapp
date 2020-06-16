@@ -4,3 +4,13 @@
     = image_tag @task.eyecatch
 = @task.content
 = @task.limit
+
+-@comments.each do |comment|
+  .card
+    =comment.content
+  
+.add_new_card
+  = link_to new_task_comment_path(@task) do
+    .add_new_card_text
+      +Add new comment
+
