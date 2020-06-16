@@ -1,5 +1,5 @@
-.container
-  = form_with(model: @task, url: board_tasks_path(@task.board), local: true) do |f|
+.container               
+  = form_with(model: task, url: board_tasks_path(@task.board), local: true) do |f|
     %div
       = f.label :eyecatch, 'アイキャッチ'
     %div
@@ -19,3 +19,5 @@
     %div
       = f.hidden_field :user_id, :value => user_id
     = f.submit '保存', class: 'btn-primary'
+
+-# url: board_tasks_path(@task.board)
