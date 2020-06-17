@@ -33,6 +33,8 @@ class TasksController < ApplicationController
       @task = current_user.tasks.find(params[:id])
       if @task.update(task_params)
         redirect_to board_path(params[:board_id])
+      else
+        render :edit
       end
     end
 
