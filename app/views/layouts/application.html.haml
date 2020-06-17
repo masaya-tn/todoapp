@@ -19,7 +19,7 @@
         - if user_signed_in?
           .dropdown
             .dropdown_img
-              = image_tag 'Image.png', class: 'avatar'
+              = image_tag current_user.avatar_image, class: 'default_avatar'
             .dropdown-content.mini
               = link_to 'プロフィール', profile_path
               = link_to 'ログアウト',  destroy_user_session_path, data: { method: 'delete' }

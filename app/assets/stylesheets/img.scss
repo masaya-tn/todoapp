@@ -2,7 +2,20 @@
     width: 50px;
 }
 
-.avatar {
-    padding-top: 70px;
-    height: 10px;
+.default_avatar {
+    padding-top: 5px;
+    height: 50px;
+    float: right;
 }
+
+.avatar_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-top: 50px;
+    height: 70px;
+    
+    border-radius: 100%;
+}
+

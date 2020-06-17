@@ -8,6 +8,7 @@
 -@comments.each do |comment|
   .card
     =comment.content
+    = image_tag comment.user.avatar_image, class: 'default_avatar'
   
 .add_new_card
   = link_to new_task_comment_path(@task) do
