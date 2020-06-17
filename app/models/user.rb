@@ -29,5 +29,21 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_one :profile, dependent: :destroy
 
+  def prepare_profile
+    profile || build_profile
+  end
+
+  def display_name
+    profile&.nickname || '名前はまだない'
+  end
+
+  def avatar_image
+    if profile&.avatar&.attached?
+      profile.avatar
+    else
+      'Image.png'
+    end
+  end
+
   
 end
