@@ -10,10 +10,12 @@ class ProfilesController < ApplicationController
   end
 
   def update
+    
     @profile = current_user.prepare_profile
     @profile.assign_attributes(profile_params)
-
+    
     if @profile.update(profile_params)
+      
       redirect_to profile_path
     else
       render :edit
@@ -22,6 +24,6 @@ class ProfilesController < ApplicationController
 
   private
   def profile_params
-    params.permit(:avatar, :nickname)
+    params.require(:profile).permit(:avatar, :nickname)
   end
 end
