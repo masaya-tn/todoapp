@@ -9,6 +9,8 @@
     .card_content
       = task.content
     
+    = image_tag task.user.avatar_image, class: 'default_avatar'
+
     - if user_signed_in? && current_user.tasks.exists?(id: task.id)
       .dropdown
         = image_tag 'actions.svg', class: 'dropbtn'

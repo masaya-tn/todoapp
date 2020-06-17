@@ -54,15 +54,15 @@
         overflow: hidden;
         
 
-        img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          width: 100%;
-        }
+        // img {
+        //   position: absolute;
+        //   top: 50%;
+        //   left: 50%;
+        //   -webkit-transform: translate(-50%, -50%);
+        //   -ms-transform: translate(-50%, -50%);
+        //   transform: translate(-50%, -50%);
+        //   width: 100%;
+        // }
     }
 }
 
@@ -78,11 +78,7 @@
     border-radius: 10px;
 
     &_text {
-        position: absolute;
-        height: 25px;
-        left: 0.35%;
-        right: 0.35%;
-        top: calc(60% - 25px/2);
+        
 
         font-family: Avenir;
         font-style: normal;
