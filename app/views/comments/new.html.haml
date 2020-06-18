@@ -3,7 +3,7 @@
     %div
       = f.label :content
     %div
-      = f.text_area :content
+      = f.text_area :content, class: 'content_form'
     %div
       = f.hidden_field :user_id, :value => @user_id
     = f.submit 'submit', class: 'btn-primary'
