@@ -4,7 +4,7 @@
     = render 'commons/task', task: task , board: @board
 
 .add_new_card
-  = link_to new_board_task_path(@board) do
+  = link_to new_board_task_path(@board), class: "text-decoration" do
     .add_new_card_text
       +Add new task
     

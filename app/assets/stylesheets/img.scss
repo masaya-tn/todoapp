@@ -1,5 +1,11 @@
 .eyecatch {
-    width: 50px;
+    position: relative;
+    top: 20px;
+
+    width: 322px;
+    height: 170px;
+
+    border-radius: 8px;
 }
 
 .default_avatar {
@@ -8,14 +14,11 @@
     float: right;
 }
 
-.avatar_image {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    padding-top: 50px;
-    height: 70px;
-    
-    border-radius: 100%;
+.profile_avatar_image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
+
+
 

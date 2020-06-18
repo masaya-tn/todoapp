@@ -4,12 +4,16 @@
     // height: 161px;
     // left: 30px;
     // top: 161px;
+    position: relative;
+    left: 30px;
+    
 
-    background: rgb(216, 215, 215);
+    background: rgb(233, 232, 232);
     border-radius: 10px;
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    margin-top: 24px;
+    height: 185px;
+    width: 362px;
+    
 
     &_title {
         // position: absolute;
@@ -17,12 +21,20 @@
         // left: 0%;
         // right: 76.79%;
         // top: calc(50% - 25px/2 - 12.5px);
+        position: relative;
+        top: 10px;
+        left: 10px;
+        
         
         font-family: Avenir;
         font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
+        font-weight: 800;
+        font-size: 20px;
         line-height: 25px;
+
+        margin-top: 17;
+        
+        
         /* identical to box height */
         
         
@@ -35,12 +47,15 @@
         // left: 0%;
         // right: 0%;
         // top: calc(50% - 19px/2 + 15.5px);
+        position: relative;
+        top: 30px;
+        left: 15px;
         
         font-family: Avenir;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 18px;
+        line-height: 25px;
         
         color: #000000;
         
@@ -71,13 +86,15 @@
     width: 362px;
     height: 160px;
     left: 30px;
-    top: 100px;
+    top: 30px;
 
     background: #FFFFFF;
     border: 1px dashed rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 
     &_text {
+        position: relative;
+        top: 70px;
         
 
         font-family: Avenir;
@@ -95,5 +112,24 @@
 }
 
 .container {
-    margin-top: 150px;
+    margin-top: 21px;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.text-position {
+    position: relative;
+    left: 30px;
+
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    /* identical to box height */
+
+
+    color: #000000;
 }

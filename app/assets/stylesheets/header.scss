@@ -32,16 +32,38 @@
         // height: 25px;
         // left: 30px;
         // top: 17px;
-
+        position: relative;
+        left: 30px;
+        
         font-family: Avenir;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 25px;
         /* identical to box height */
-
+        
 
         color: #000000;
 
     }
+}
+
+
+
+.avatar_image {
+    position: relative;
+    top: 7px;
+    left: 290px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.avatar_image_index {
+    position: relative;
+    top: 80px;
+    left: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }
