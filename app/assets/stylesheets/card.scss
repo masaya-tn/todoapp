@@ -134,3 +134,44 @@
 
     color: #000000;
 }
+
+.card-in-image {
+    position: relative;
+    left: 30px;
+    
+
+    background: rgb(233, 232, 232);
+    border-radius: 10px;
+    margin-top: 24px;
+    height: 347px;
+    width: 362px;
+
+    &_title {
+        position: relative;
+        top: 30px;
+        left: 20px;
+
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #000000;
+    }
+
+    &_content {
+        position: relative;
+        top: 30px;
+        left: 20px;
+        
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #000000;
+
+    }
+}

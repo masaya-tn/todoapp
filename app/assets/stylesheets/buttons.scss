@@ -14,8 +14,13 @@
     border: solid;
     border-radius: 4px;
     background: #F8BD1C;
-    color: black;
+    color: white;
     border-color: #F8BD1C;
+    
+
+    position: relative;
+    left: 0px;
+    top: 0px;
 
 }
 
@@ -36,7 +41,7 @@
 
 }
 
-.sign_up_btn {
+.submit_btn {
     background: #F8BD1C;
     border-radius: 4px;
     border-color: #F8BD1C;
@@ -47,7 +52,9 @@
 
     position: relative;
     left: 24px;
-    top: 230px;
+    top: 120px;
+
+    
 }
 
 .dropbtn_edit {
