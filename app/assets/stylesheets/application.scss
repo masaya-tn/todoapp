@@ -22,7 +22,7 @@
  @import 'buttons';
 
  body {
-     background-color: #F2F2F2;
+     background-color: white;
  }
 
  .all_boards {
@@ -37,4 +37,9 @@
     
     
     color: #000000;
+ }
+
+ .board_title {
+     position: relative;
+     left: 30px;
  }
