@@ -1,23 +1,23 @@
 .container               
   = form_with(model: task, url: board_tasks_path(@task.board), local: true) do |f|
-    %div
+    %div.form_label
       = f.label :eyecatch, 'アイキャッチ'
-    %div
+    %div.form
       = f.file_field :eyecatch
-    %div
+    %div.form_label
       = f.label :title, 'タイトル'
-    %div
+    %div.form
       = f.text_field :title, class: 'title_form'
-    %div
+    %div.form_label
       = f.label :content, '内容'
-    %div
+    %div.form
       = f.text_area :content, class: 'content_form'
-    %div
+    %div.form_label
       = f.label :limit, '期限'
-    %div
+    %div.form
       = f.date_field :limit
     %div
       = f.hidden_field :user_id, :value => user_id
-    = f.submit 'submit', class: 'btn-primary'
+    = f.submit 'submit', class: 'submit_btn'
 
 -# url: board_tasks_path(@task.board)
