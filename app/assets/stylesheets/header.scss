@@ -54,9 +54,7 @@
     position: relative;
     top: 7px;
     left: 290px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    
 }
 
 .avatar_image_index {
@@ -67,3 +65,18 @@
     width: 30px;
     height: 30px;
 }
+
+.login {
+    text-decoration: none;
+
+    position: relative;
+    top: 18px;
+    left: 260px;
+}
+
+.icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+

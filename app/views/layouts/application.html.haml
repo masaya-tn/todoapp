@@ -14,17 +14,17 @@
       .header_logos
         %p.header_title
           = link_to root_path, class: "text-decoration " do
-            = 'Boards'
+            Boards
       .header_avatar
         - if user_signed_in?
-          .dropdown
+          .dropdown.avatar_image
             .dropdown_img
-              = image_tag current_user.avatar_image, class: 'avatar_image'
+              = image_tag current_user.avatar_image, class: 'icon'
             .dropdown-content.mini
               = link_to 'プロフィール', profile_path
               = link_to 'ログアウト',  destroy_user_session_path, data: { method: 'delete' }
         - else
-          = link_to 'ログイン', new_user_session_path
+          = link_to 'ログイン', new_user_session_path, class: 'login'
           
 
       %p.header_border

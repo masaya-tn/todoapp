@@ -1,5 +1,12 @@
 .task_title
   = @task.title
+- if user_signed_in? && current_user.tasks.exists?(id: @task.id)
+  .dropdown.dropbtn_task
+    = image_tag 'actions.svg'
+    .dropdown-content.mini
+      = link_to '編集する',  edit_board_task_path(board_id: @board.id, id: @task.id)
+      = link_to '削除する',  board_task_path(board_id: @board.id, id: @task.id), data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
+
 - if @task.eyecatch.attached?
   .eyecatch
     = image_tag @task.eyecatch, class: 'task_image'
@@ -19,5 +26,6 @@
 .add_new_comment_link
   = link_to new_task_comment_path(@task), class: "text-decoration" do
     .add_new_comment
-      +Add new comment
+      .add_new_comment_text
+        +Add new comment
 
