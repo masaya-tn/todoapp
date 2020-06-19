@@ -1,17 +1,23 @@
-= @task.title
+.task_title
+  = @task.title
 - if @task.eyecatch.attached?
   .eyecatch
-    = image_tag @task.eyecatch
-= @task.content
-= @task.limit
+    = image_tag @task.eyecatch, class: 'task_image'
+.task_content
+  .task_content_text
+    = @task.content
+  .task_content_limit
+    = @task.limit
 
+.comment
+  Comment
 -@comments.each do |comment|
-  .card
+  .comment_content    
     =comment.content
-    = image_tag comment.user.avatar_image, class: "avatar_image"
+  = image_tag comment.user.avatar_image, class: "comment_avatar_image"
   
-.add_new_card
+.add_new_comment_link
   = link_to new_task_comment_path(@task), class: "text-decoration" do
-    .add_new_card_text
+    .add_new_comment
       +Add new comment
 
